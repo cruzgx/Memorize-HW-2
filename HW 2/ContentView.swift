@@ -26,7 +26,7 @@ struct ContentView: View {
                             .onTapGesture {
                                 viewModel.choose(card)
                             }
-                            
+                            .foregroundColor(viewModel.getThemeColor())
                     }
                 }
 
