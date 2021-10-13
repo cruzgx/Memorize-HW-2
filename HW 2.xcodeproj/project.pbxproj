@@ -13,6 +13,7 @@
 		F634837C270A331400CF50BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F634837B270A331400CF50BD /* Preview Assets.xcassets */; };
 		F6348384270A334D00CF50BD /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6348383270A334D00CF50BD /* EmojiMemoryGame.swift */; };
 		F6348386270A341D00CF50BD /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6348385270A341D00CF50BD /* MemoryGame.swift */; };
+		F6A37E5E27137C9000FFC3D7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A37E5D27137C9000FFC3D7 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F634837D270A331400CF50BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6348383270A334D00CF50BD /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		F6348385270A341D00CF50BD /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		F6A37E5D27137C9000FFC3D7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F6348376270A331400CF50BD /* ContentView.swift */,
 				F6348385270A341D00CF50BD /* MemoryGame.swift */,
 				F6348383270A334D00CF50BD /* EmojiMemoryGame.swift */,
+				F6A37E5D27137C9000FFC3D7 /* Theme.swift */,
 				F6348378270A331400CF50BD /* Assets.xcassets */,
 				F634837D270A331400CF50BD /* Info.plist */,
 				F634837A270A331400CF50BD /* Preview Content */,
@@ -146,6 +149,7 @@
 			files = (
 				F6348377270A331400CF50BD /* ContentView.swift in Sources */,
 				F6348386270A341D00CF50BD /* MemoryGame.swift in Sources */,
+				F6A37E5E27137C9000FFC3D7 /* Theme.swift in Sources */,
 				F6348375270A331400CF50BD /* HW_2App.swift in Sources */,
 				F6348384270A334D00CF50BD /* EmojiMemoryGame.swift in Sources */,
 			);

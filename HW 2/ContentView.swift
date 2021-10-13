@@ -8,25 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns:[GridItem(.adaptive(minimum: 75))]) {
-                ForEach(viewModel.cards) { card in
-                    CardView(card)
-                        .aspectRatio(2/3, contentMode: .fit)
-                        .onTapGesture {
-                            viewModel.choose(card)
-                        }
+        VStack {
+            ScrollView {
+                Text(viewModel.getThemeName())
+                //Placeholder
+                Text("Score: X")
+                    .font(.title2)
+               
+                
+                LazyVGrid(columns:[GridItem(.adaptive(minimum: 75))]) {
+                    ForEach(viewModel.cards) { card in
+                        CardView(card)
+                            .aspectRatio(2/3, contentMode: .fit)
+                            .onTapGesture {
+                                viewModel.choose(card)
+                            }
+                            
+                    }
                 }
+
+                //MARK: HIGH PRIORITY: the follwing line crashes code!
+//                foregroundColor(.blue)
+
+                .padding(.horizontal)
+
             }
-            
+            Button(action: {viewModel.newGame()}, label: {
+                Image(systemName: "play.fill")
+                    .foregroundColor(.blue)
+                Text("New Game")
+            })
         }
-        .foregroundColor(.red)
         
-        .padding(.horizontal)
     }
 }
 
@@ -70,9 +86,10 @@ struct ContentView_Previews: PreviewProvider {
         let game = EmojiMemoryGame()
         ContentView(viewModel: game)
             .preferredColorScheme(.light)
-        
+    }
+}
         //This shows another preview
 //        ContentView(viewModel: game)
 //            .preferredColorScheme(.light)
-    }
-}
+    
+
