@@ -14,8 +14,9 @@ struct ContentView: View {
         VStack {
             ScrollView {
                 Text(viewModel.getThemeName())
+                    .foregroundColor(viewModel.getThemeColor())
                 //Placeholder
-                Text("Score: X")
+                Text("Score: " + String(viewModel.getScore()))
                     .font(.title2)
                
                 

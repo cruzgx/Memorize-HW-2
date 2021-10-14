@@ -77,6 +77,9 @@ class EmojiMemoryGame: ObservableObject {
         }
     }
 
+    func getScore() -> Int {
+        model.score 
+    }
     
     //call this function when new game button is pressed.
     func newGame() {
