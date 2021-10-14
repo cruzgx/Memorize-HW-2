@@ -89,7 +89,7 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.light)
     }
 }
-        //This shows another preview
+        //This just shows another preview
 //        ContentView(viewModel: game)
 //            .preferredColorScheme(.light)
     
